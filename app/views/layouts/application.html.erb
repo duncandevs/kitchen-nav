@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head class = "header">
+    <title>RecipeNav</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <% if logged_in? %>
+      <% @user = current_user %>
+      <%= render 'layouts/header_login' %>
+    <% else %>
+      <%= render 'layouts/header' %>
+    <% end %>
+  </head>
+
+  <div class = "container">
+      <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <% end %>
+      <%= yield %>
+  </div>
+</html>

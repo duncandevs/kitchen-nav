@@ -1,0 +1,95 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+/* mixins , variables, etc. */
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+/*body*/
+
+/*header*/
+.header-row{
+   padding-top:10px;
+   padding-bottom:10px;
+   background-color:white;
+   margin-bottom:20px;
+}
+#logo{
+  margin-left:50px;
+  color:#00ffa8;
+  font-weight:bold;
+}
+.header-el{
+ float:left;
+ margin-right:30px;
+}
+#profilepic{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+}
+.right-header{
+  float:right;
+  margin-right:160px;
+}
+.left-header{
+  float:left;
+  margin-left:160px;
+}
+#myrecipes, #favorites, #explore{
+  color:#cccbcb;
+  font-family: 'arial';
+  font-size:18px;
+  &:hover {
+    color:#585858;
+  }
+}
+#profilename{
+  font-family: 'arial';
+  font-size: 18px;
+  color:#42dab4;
+}
+.logout{
+  color: gray;
+  font-size:18px;
+}
+/* forms */
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+input {
+  height: auto !important;
+}
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+/* delete recipe */
+.delete-recipe{
+  border: none;
+  float:right;
+  margin-top:2px;
+  margin-right:10px;
+  width:16px;
+  height:16px;
+  background-image: url('icons/delete.png');
+}
+.delete-recipe:hover {
+  border: none;
+  box-shadow: none;
+  background-image: url('icons/delete-hover.png');
+}

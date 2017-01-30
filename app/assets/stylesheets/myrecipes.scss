@@ -1,0 +1,59 @@
+body{
+  background-color:#dcdfde !important;
+}
+.create-new-recipe{
+  color:#42dab4 !important;
+}
+.recipe-card{
+  float:left;
+  margin-right:30px;
+  margin-bottom:130px;
+  width:300px;
+  height:250px;
+  background-color:white;
+}
+.recipe-title{
+  margin-top:20px;
+}
+.wrap{
+    padding-left:10%;
+}
+.recipe-top{
+  padding-top:5px;
+  height:98px;
+}
+.recipe-pic{
+  height:100%;
+  width:100%;
+  background-color:red;
+}
+/* STYLING FOR RECIPE INFO BAR */
+.recipe-time,.recipe-serves{
+  float:left;
+  margin-left:25px;
+  color:#42dab4;
+  font-weight:bold;
+}
+.recipe-img{
+  width:100%;
+  height:100%;
+}
+.recipe-bar{
+  width:240px;
+  height:40px;
+  background-color:white;
+  position:absolute;
+  margin-top:180px;
+  margin-left:30px;
+  padding-top:10px;
+  border-radius:0px;
+}
+.time-img{
+  float:left;
+  margin-left:20px;
+  margin-right:0px;
+}
+.serve-img{
+  float:left;
+  margin-left:50px;
+}

@@ -1,0 +1,64 @@
+<%= stylesheet_link_tag "live_recipe" %>
+<%= javascript_include_tag "live_recipe" %>
+<%= javascript_tag do %>
+      rb_ingredients = "<%= @recipe.ingredients %>"
+      rb_steps = "<%= @recipe.directions %>"
+      rb_owner_name = "<%= User.find_by(id: @recipe.user_id).name %>"
+      rb_recipe_name = "<%= @recipe.recipetitle %>"
+      rb_recipe_time = "<%= @recipe.time %>"
+      rb_recipe_serves = "<%= @recipe.serves %>"
+
+<% end %>
+<div class = "container container-recipe">
+  <%= render 'recipes/tips.html.erb' %>
+  <div class = "row row-recipe center-block">
+    <div class = "left-panel">
+      <div class = "recipe-title">
+        <span class = "recipe-name"><%= @recipe.recipetitle %></span>
+        <%= link_to   follow_path(@recipe, :recipeid => @recipe.id) do %>
+          <img class = "heart" src = "http://cliparts.co/cliparts/6Ty/5yM/6Ty5yMdLc.png"width="20px">
+        <% end %>
+        <h3 class = "owner-title">by: <span class = "owner-name"><!--NAME--></span></h3>
+        <div class = "recipe-info"><%= image_tag("icons/time.png", size: "18", class: "time-img") %><span class = "recipe-time"><%= @recipe.time %></span>
+          <%= image_tag("icons/user-small.png", size: "17", class: "serve-img") %><span class = "recipe-serves"><%= @recipe.serves %></span></div>
+      </div><!--recipe -- title -->
+      <div class = "ingredients-container">
+        <span class = "ingredients-title">INGREDIENTS</span>
+        <ul class = "ingredients-list scroll1">
+          <!--<li class="ingredients-list-item">list item</li>-->
+        </ul>
+      </div><!--ingredients-container-->
+    </div><!--left-panel-->
+    <div class = "right-panel">
+      <div class = "directions-container">
+        <div class = "directions-top-content">
+          <div class = "directions-title"><h4 class = "text-center" id= "directions-title">
+               DIRECTIONS</h4></div>
+          <ol class = "directions-list scroll2">
+            <!--<li class = "directions-list-item">Direction list item goes here</li>-->
+          </ol>
+        </div>
+        <button class = "btn btn-success startcooking center-block">start cooking</button>
+      </div><!--directions-container-->
+      <div class = "cooking-container">
+        <div class = "cooking-top-content">
+          <div class = "directions-title"><h1 class = "text-center" id= "directions-title">
+               DIRECTIONS</h1>
+          </div>
+          <div class = "step-title"><h2 class = "text-center" id = "step-title"><!--STEP 3--></h2></div>
+          <!--<div class = "timer-wrap">
+            <div class = "timer"></div>
+            <div class = "start-timer">START TIMER</div>
+          </div>-->
+          <div class = "cooking-list">
+            <h1 class = "cooking-item"><!--Cook 4 hours on HIGH. Remove pickling spice bundle. Serve with couscous, if desired.--></h1>
+          </div>
+        </div>
+        <div class = "directions-nav">
+           <%= image_tag("icons/backarrow.png", size: "18", class: "directions-back-nav") %>
+           <%= image_tag("icons/nextarrow.png", size: "18", class: "directions-next-nav") %>
+        </div>
+      </div><!--cooking-container-->
+    </div><!--right-panel-->
+  </div>
+</div>

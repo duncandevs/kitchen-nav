@@ -1,0 +1,32 @@
+.category{
+  padding-left:145px;
+  margin-top:40px;
+}
+.category-title{
+  font-style:italic;
+  font-weight:bold;
+}
+.catpanel{
+  background-color:red;
+}
+.left-panel{
+  float:left;
+  width:435px;
+  height:290px;
+  background-color:gray;
+  margin-bottom:20px;
+}
+.right-panel{
+ float:left;
+ margin-left:10px;
+ width:440px;
+ height:290px;
+}
+.mini{
+  float:left;
+  width:210px;
+  height:140px;
+  background-color:gray;
+  margin-right:10px;
+  margin-bottom:10px;
+}

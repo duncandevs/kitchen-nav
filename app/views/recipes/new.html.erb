@@ -1,0 +1,27 @@
+<%= link_to "back to my recipes", "/users/#{current_user.id}" %>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@recipe, url: '/recipes/new' ) do |f| %>
+
+      <%= f.label :recipetitle, "Recipe Title" %>
+      <%= f.text_field :recipetitle, class: 'form-control' %>
+
+      <%= f.label :ingredients %>
+      <%= f.text_field :ingredients, class: 'form-control' , placeholder: 'add like so: ingredient1 #ingredient2 #ingredient3' %>
+
+      <%= f.label :directions %>
+      <%= f.text_field :directions , class: 'form-control' , placeholder: 'add like so: step1 #step2 #step3' %>
+
+      <%= f.label :imageurl %>
+      <%= f.text_field :imageurl , class: 'form-control' %>
+
+      <%= f.label :time %>
+      <%= f.text_field :time , class: 'form-control' %>
+
+      <%= f.label :serves %>
+      <%= f.text_field :serves , class: 'form-control' %>
+
+      <%= f.submit "Create new recipe", class: "btn btn-success" %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,241 @@
+body{
+    background-image:    url('http://blog.zola.com/wp-content/uploads/2014/11/cooking-1200x675.jpg') !important;
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position:  '#';
+  /*background-color:#dcdfde !important;*/
+
+}
+/* SCROLL STYLING */
+.scroll1 {
+   overflow-x: hidden;
+   overflow-y: scroll;
+}
+.scroll1::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scroll1::-webkit-scrollbar-track {
+  background: black;
+}
+.scroll1::-webkit-scrollbar-thumb {
+  background: #666;
+}
+.scroll2 {
+   overflow-x: hidden;
+   overflow-y: scroll;
+}
+.scroll2::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scroll2::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.scroll2::-webkit-scrollbar-thumb {
+  background: #e4e4e4;
+}
+/* BODY STYLING */
+.container-recipe{
+  margin-top:50px;
+}
+.row-recipe{
+  margin-top:20px;
+  width:932px;
+  height:536px;
+  background-color:white;
+  margin-bottom:50px;
+}
+.left-panel{
+  float:left;
+  height:536px;
+  width:320px;
+  background-color:#252525;
+  padding-left:40px;
+}
+.right-panel{
+  float:left;
+  height:536px;
+  width:612px;
+  background-color:white;
+}
+.recipe-title{
+  width:100%;
+  padding-bottom:20px;
+  padding-top:30px;
+}
+.recipe-name{
+  font-size:18px;
+  font-weight:bold;
+  color:white;
+}
+.heart{
+  margin-top:-6px;
+  margin-left:20px;
+}
+.owner-title{
+  margin-top:0px;
+  font-size:12px;
+  color:white;
+  font-style: italic;
+}
+.ingredients-container{
+}
+.ingredients-title{
+  font-size:14px;
+  font-weight:bold;
+  color:#ff5400;
+}
+.ingredients-list{
+  margin-top:20px;
+  margin-left:-20px;
+  height:330px;
+}
+.ingredients-list-item{
+  margin-bottom:10px;
+  color:white;
+}
+.directions-title{
+  margin-top:70px;
+  width:612px;
+}
+#directions-title{
+  font-size:14px;
+  font-weight:bold;
+  color:#ff5400;
+}
+.directions-top-content{
+  height: 375px;
+  background-color:'#';
+}
+.directions-list{
+  margin-top:31px;
+  height:290px;
+}
+.directions-list-item{
+  padding-right:10px;
+  margin-bottom:30px;
+  font-weight:bold;
+}
+.startcooking{
+  color:white;
+  font-weight:bold;
+}
+.step-title{
+  width:612px;
+}
+#step-title{
+  font-size:13px;
+  font-weight:bold;
+}
+.timer-wrap{
+  width:100%;
+  height:70px;
+  padding-left:200px;
+  margin-top:20px;
+  background-color:white;
+}
+.timer{
+  float:left;
+  font-size:60px;
+  font-weight:bold;
+}
+.start-timer{
+  float:left;
+  margin-left:10px;
+  margin-top:32px;
+  font-weight:bold;
+  font-size:12px;
+  color:gray;
+}
+.cooking-list{
+  padding-left:10px;
+  padding-right:10px;
+}
+.cooking-item{
+  font-size:24px;
+  font-weight:bold;
+}
+.cooking-top-content{
+  height: 375px;
+  background-color:'#';
+}
+.directions-nav{
+  float:right;
+  margin-right:60px;
+}
+.highlight{
+  margin-right:2px;
+  background-color:#E7F76D;
+}
+/* STYLING FOR RECIPE INFO BAR */
+.recipe-info{
+  font-size:14px;
+  font-weight:bold;
+  color:#42dab4;
+  margin-bottom:30px;
+}
+.recipe-time.recipe-serves{
+  float:left;
+  margin-left:25px;
+  color:#42dab4;
+  font-weight:bold;
+}
+.recipe-img{
+  width:100%;
+  height:100%;
+}
+.time-img{
+  float:left;
+  margin-left:0px;
+  margin-right:0px;
+}
+.serve-img{
+  float:left;
+  margin-left:50px;
+}
+/* RECIPE TIPS */
+.tips-wrap{
+  display:none;
+  margin-top:20px;
+  width:932px;
+  height:350px;
+  background-color:white;
+  border-radius:5px;
+}
+.tips-top-row{
+  padding-top:25px;
+  padding-left:30px;
+  padding-bottom:20px;
+  background-color:'';
+}
+.tips{
+  height:35px;
+  width:80px;
+}
+.tips-header-text{
+  margin-left:30px;
+  font-style:italic;
+  font-weight:bold;
+  color:gray;
+}
+.tips-ingredients{
+  float:left;
+}
+.tips-content{
+  float:left;
+  padding-left:80px;
+  width:300px;
+}
+.tips-content-item{
+  margin-bottom:8px;
+}
+.tipsframe{
+  float:right;
+  margin-right:30px;
+  margin-top:-30px;
+  border-radius:2px;
+}
+.list-group{
+  margin-left:30px;
+}

@@ -1,0 +1,19 @@
+<style>
+body{
+  background-color: white !important;
+}
+</style>
+<%= stylesheet_link_tag "homepage" %>
+<div class = "container">
+  <div class = " options">
+    <%= link_to login_path do %>
+      <div class = 'button login text-center'>LOG IN</div>
+    <% end %>
+    <%= link_to signup_path do %>
+      <div class = "button join  text-center">JOIN</div>
+    <% end %>
+    <%= link_to guest_path do %>
+      <div class = "button guest text-center">ENTER AS GUEST</div>
+    <% end %>
+  </div>
+</div>

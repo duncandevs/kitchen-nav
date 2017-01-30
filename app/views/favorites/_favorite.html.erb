@@ -1,0 +1,23 @@
+<% recipe = Recipe.find_by(id: favorite.recipe_id) %>
+<% @recipe_owner = User.find_by(id: recipe.user_id) %>
+<div class = "recipe-card">
+  <div class = "recipe-top">
+    <%= link_to favorite, method: :delete do%>
+        <div class = "delete-recipe"></div>
+    <%end%>
+    <h4 class = "recipe-title text-center"><%= link_to recipe.recipetitle, recipe %></h4>
+    <p  class = "owner-name text-center">by: <%= @recipe_owner.name %></p>
+  </div>
+  <div class = "recipe-bar text-center">
+    <%= image_tag("icons/time.png", size: "18", class: "time-img") %><span class = "recipe-time"><%= recipe.time %></span>
+    <%= image_tag("icons/user-small.png", size: "17", class: "serve-img") %><span class = "recipe-serves"><%= recipe.serves %></span>
+  </div>
+  <div class = "recipe-pic">
+    <% if(recipe.imageurl == nil || recipe.imageurl == "") %>
+      <%= image_tag("http://i.huffpost.com/gen/1182651/images/o-HEALTHY-COOKING-facebook.jpg" , class: "recipe-img") %>
+    <% else %>
+      <%= image_tag(recipe.imageurl, class: "recipe-img")%>
+    <% end %>
+    <!--<img src = "" alt= "" class = "recipe-img">-->
+  </div>
+</div>

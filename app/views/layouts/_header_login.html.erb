@@ -1,0 +1,17 @@
+<header>
+  <div class = "row header-row">
+    <h3 class = "header-el" id="logo">KN</h3>
+    <div class = "left-header">
+      <h3 class = "header-el" id="myrecipes"> <%= link_to "my recipes", @user %></h3>
+      <h3 class = "header-el" id="favorites"> <%= link_to "favorites", favorites_path %> </h3>
+      <h3 class = "header-el" id ="explore"><%= link_to "explore", explore_path %></h3>
+    </div>
+    <div class = "right-header">
+      <!--<img src = "https://yt3.ggpht.com/-qwXnoxAmSnM/AAAAAAAAAAI/AAAAAAAAAAA/iQgIQwT_SdM/s900-c-k-no-mo-rj-c0xffffff/photo.jpg"
+        class= "header-el" id="profilepic">-->
+      <%= image_tag("profile_pic.jpg",class: "header-el" , id: "profilepic") %>
+      <h3 class = "header-el" id="profilename"><%= @user.name %></h3>
+      <h3 class = "header-el logout"><%= link_to "log out", logout_path, method: "delete" %></h3>
+    </div>
+  </div>
+</header>

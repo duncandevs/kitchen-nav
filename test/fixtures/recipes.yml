@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  recipetitle: MyText
+  ingredients: MyText
+  directions: MyText
+  user: one
+  imageurl: MyText
+  time: MyText
+  serves: MyText
+
+two:
+  recipetitle: MyText
+  ingredients: MyText
+  directions: MyText
+  user: two
+  imageurl: MyText
+  time: MyText
+  serves: MyText

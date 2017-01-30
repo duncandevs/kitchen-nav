@@ -1,0 +1,16 @@
+<div class = "row">
+  <div class = "container">
+    <div class = "wrap">
+    <div class = "row content-nav">
+      <h4 class = "create-new-recipe"><%= link_to "create new recipe", '/recipes/new' %></h4>
+    </div>
+      <div class = "row recipe-container">
+        <% if @user.recipes.any? %>
+          <%= render @recipes %>
+        <% else %>
+          <p> you don't have any recipes yet, click create new recipe to begin </p>
+        <% end %>
+      </div>
+  </div>
+  </div>
+</div>
