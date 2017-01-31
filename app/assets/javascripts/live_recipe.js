@@ -77,7 +77,7 @@ function displayTips(tips,tips_in_recipe){
         }
       }
     }
-    $("iframe").attr("src","http://www.youtube.com/embed/"+tips_content_array[0][1]);
+    $("iframe").attr("src","https://www.youtube.com/embed/"+tips_content_array[0][1]);
     dispTipsVideo();
   }//end else
 }//end function
@@ -227,6 +227,6 @@ function tipsButton(){
     var videoid = $( ".tips-content-item" ).first().attr("url");
     $('.tips-wrap').hide('slow');
     $('.tips-show').show('slow');
-    $("iframe").attr("src","").attr("src","http://www.youtube.com/embed/"+videoid);
+    $("iframe").attr("src","").attr("src","https://www.youtube.com/embed/"+videoid);
   })
 }
