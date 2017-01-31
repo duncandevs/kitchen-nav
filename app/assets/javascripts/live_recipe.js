@@ -84,7 +84,7 @@ function displayTips(tips,tips_in_recipe){
 function dispTipsVideo(){
   $(".tips-content-item").click(function(){
     var videoid = $(this).attr("url");
-    var url = "http://www.youtube.com/embed/"+videoid+"?autoplay=1";
+    var url = "https://www.youtube.com/embed/"+videoid+"?autoplay=1";
     $("iframe").attr("src",url);
   })
 }
