@@ -2,7 +2,7 @@
   <div class = "recipe-top">
     <!--<%= image_tag("icons/delete.png", size: "18", class: "delete-recipe") %>-->
     <%= link_to recipe, method: :delete, data: { confirm: "are you sure you want to DELETE this RECIPE?" }  do%>
-        <%= image_tag("delete.png", class: "delete-recipe") %>
+        <%= image_tag("icons/delete.png", class: "delete-recipe") %>
     <%end%>
     <h4 class = "recipe-title text-center"><%= link_to recipe.recipetitle, recipe %></h4>
     <p  class = "owner-name text-center">by: <%= @user.name %></p>
