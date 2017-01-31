@@ -3,7 +3,7 @@
 <div class = "recipe-card">
   <div class = "recipe-top">
     <%= link_to favorite, method: :delete do%>
-        <div class = "delete-recipe"></div>
+        <%= image_tag("icons/delete.png", class: "delete-recipe") %>
     <%end%>
     <h4 class = "recipe-title text-center"><%= link_to recipe.recipetitle, recipe %></h4>
     <p  class = "owner-name text-center">by: <%= @recipe_owner.name %></p>
