@@ -9,7 +9,8 @@
        <% end %>
       </div>
       <div class = "right-panel">
-        <%= link_to 'recipes/'+ `#{Recipe.find_by(recipetitle:'Roast Salmon and Broccoli with Chile-Caper Vinaigrette').id}` do%>
+        <h1><%= Recipe.find_by(recipetitle:'Roast Salmon and Broccoli with Chile-Caper Vinaigrette %></h1>
+        <%= link_to 'recipes/17' do %>
           <img class = "mini" src = "http://assets.bonappetit.com/photos/57adef4053e63daf11a4df12/16:9/w_1028,c_limit/roast-salmon-and-broccoli-with-chile-caper-vinaigrette.jpg">
         <% end %>
         <%= link_to 'recipes/18' do%>
