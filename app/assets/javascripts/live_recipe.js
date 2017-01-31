@@ -71,7 +71,7 @@ function displayTips(tips,tips_in_recipe){
           var tips_videoid = tips_content_array[j][1];
 
           $tips_content_item.className = "tips-content-item " + tip_title;
-          $tips_content_item.setAttribute("url",`${tips_videoid}`);
+          $tips_content_item.setAttribute("url", tips_videoid);
           $tips_content_item.innerHTML = tips_content_array[j][0].toLowerCase();
           $(".tips-content").append($tips_content_item);
         }
